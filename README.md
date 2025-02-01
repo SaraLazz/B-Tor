@@ -31,13 +31,4 @@ cd ns-allinone-3.30
 ./build.py
 ```
 
-### 5. Set up environment variables
-```bash
-export NS3_DIR=$(pwd)/ns-3.30
-echo "export NS3_DIR=$(pwd)/ns-3.30" >> ~/.bashrc
-echo "export PATH=$NS3_DIR/build:$PATH" >> ~/.bashrc
-echo "export LD_LIBRARY_PATH=$NS3_DIR/build:$LD_LIBRARY_PATH" >> ~/.bashrc
-echo "export PYTHONPATH=$NS3_DIR/build:$PY
-```
-
 
