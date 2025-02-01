@@ -7,7 +7,8 @@ To run the simulation, you need to install NS-3 on your Linux system. Follow the
 
 ### 1. Update the system  
 ```bash
-sudo apt update && sudo apt upgrade -y ```
+sudo apt update && sudo apt upgrade -y
+```
 
 ### 2. Install required dependencies
 ```sudo apt install -y gcc g++ python3 python3-pip git mercurial qtbase5-dev cmake \
