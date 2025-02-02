@@ -1,5 +1,7 @@
 # B-Tor
-NS3 simulation of a branched version of Tor to provide anonymity against a global adversary
+NS3 simulation of a branched version of Tor to provide anonymity against a global adversary.
+
+This project is an **adaptation of [nstor](https://github.com/tschorsch/nstor)**, modified to implement a branched Tor model.
 
 ## Installation  
 
@@ -30,5 +32,31 @@ cd ns-allinone-3.30
 ./build.py --enable-examples --enable-tests
 ./build.py
 ```
+
+## Running B-Tor
+
+To run the **B-Tor** simulation, follow these steps:
+
+- Open `examples/btor-example.cc` and set:
+    1. Branch length (`branch_len`) at line 31 and Chain length (`chain_len`) at line 32 (available configurations can be found in `doc2/EXP`).
+    2. Ensure line 33 is commented out.
+    3. Uncomment line 63
+    4. Comment out line 64
+       
+In helper/branched-tor-dumbbell-helper.cc:
+Set node bandwidth at lines 278 and 318
+Uncomment line 432 and comment out line 433
+In model/tor.cc:
+Comment out lines 384-389
+In model/pseudo-socket.cc:
+Set the amount of data the client should receive at line 405
+Running the simulation
+After making these modifications, compile and run:
+
+bash
+Copia
+Modifica
+cd ns-3.30
+./ns3 run btor-example
 
 
