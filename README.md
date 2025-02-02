@@ -42,17 +42,17 @@ In `examples/btor-example.cc`:
 2. Ensure line 33 is commented out
 3. Uncomment line 63
 4. Comment out line 64
-<br>     
+    
 In `helper/branched-tor-dumbbell-helper.cc`:
 1. Set node bandwidth at lines 278 and 318
 2. Uncomment line 432 and comment out line 433
-<br>
+
 In `model/tor.cc`:
 1. Comment out lines 384-389
-<br>
+
 In `model/pseudo-socket.cc`:
 1. Set the amount of data the client should receive at line 405
-<br>
+
 After making these modifications, compile and run:
 
 ```bash
