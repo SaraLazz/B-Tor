@@ -60,8 +60,9 @@ cd ns-3.30
 ./waf --run  btor-example
 ```
 
-Running L-Tor
-To run the L-Tor simulation, follow these steps:
+## Running L-Tor
+
+To run the **L-Tor** simulation, follow these steps:
 
 In `examples/btor-example.cc`:
 1. Set Circuit length (`len`) at line 33 (available configurations can be found in `doc2/EXP`).
