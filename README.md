@@ -37,26 +37,26 @@ cd ns-allinone-3.30
 
 To run the **B-Tor** simulation, follow these steps:
 
-- Open `examples/btor-example.cc` and set:
-    1. Branch length (`branch_len`) at line 31 and Chain length (`chain_len`) at line 32 (available configurations can be found in `doc2/EXP`).
-    2. Ensure line 33 is commented out.
-    3. Uncomment line 63
-    4. Comment out line 64
-       
-In helper/branched-tor-dumbbell-helper.cc:
-Set node bandwidth at lines 278 and 318
-Uncomment line 432 and comment out line 433
-In model/tor.cc:
-Comment out lines 384-389
-In model/pseudo-socket.cc:
-Set the amount of data the client should receive at line 405
-Running the simulation
+In `examples/btor-example.cc`:
+1. Set branch length (`branch_len`) at line 31 and chain length (`chain_len`) at line 32 (available configurations can be found in `doc2/EXP`).
+2. Ensure line 33 is commented out
+3. Uncomment line 63
+4. Comment out line 64
+<br>     
+In `helper/branched-tor-dumbbell-helper.cc`:
+1. Set node bandwidth at lines 278 and 318
+2. Uncomment line 432 and comment out line 433
+<br>
+In `model/tor.cc`:
+1. Comment out lines 384-389
+<br>
+In `model/pseudo-socket.cc`:
+1. Set the amount of data the client should receive at line 405
+<br>
 After making these modifications, compile and run:
 
-bash
-Copia
-Modifica
+```bash
 cd ns-3.30
-./ns3 run btor-example
-
+./waf --run  btor-example
+```
 
